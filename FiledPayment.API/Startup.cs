@@ -53,6 +53,7 @@ namespace FiledPayment.API
 			app.UseSwaggerUI(c =>
 			{
 				c.SwaggerEndpoint("/swagger/v1/swagger.json", "Filed Payment API");
+				c.RoutePrefix = "";
 			});
 
 			app.UseCors("Open");
